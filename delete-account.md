@@ -4,7 +4,7 @@ title: Delete your Tesserae account
 
 # Delete your Tesserae account
 
-To delete your Tesserae account and its data from the server, email **CONTACT_EMAIL** from the Google account you sign in with, with the subject "Delete my Tesserae account".
+To delete your Tesserae account and its data from the server, email **tesserae.support@gmail.com** from the Google account you sign in with, with the subject "Delete my Tesserae account".
 
 ## What is deleted
 
