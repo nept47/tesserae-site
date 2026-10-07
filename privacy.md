@@ -49,4 +49,4 @@ If this policy changes, the new version is published on this page with a new dat
 
 ## Contact
 
-Questions about privacy: CONTACT_EMAIL
+Questions about privacy: tesserae.support@gmail.com
