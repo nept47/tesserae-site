@@ -37,7 +37,7 @@ The server runs on Microsoft Azure in the West Europe region (the Netherlands). 
 
 ## Keeping and deleting your data
 
-Your data is kept while you have an account. You can sign out at any time and choose to keep your cards on the phone or remove them. To delete your account and the data on the server, see [Delete your account](delete-account).
+Your data is kept while you have an account. You can sign out at any time and choose to keep your cards on the phone or remove them. To delete your account and the data on the server, use **Settings → Delete account** in the app, or see [Delete your account](delete-account).
 
 ## Children
 
