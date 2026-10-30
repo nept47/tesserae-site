@@ -4,13 +4,13 @@ title: Tesserae privacy policy
 
 # Tesserae privacy policy
 
-*Last updated: 17 October 2026*
+*Last updated: 30 October 2026*
 
 Tesserae is an Android app for keeping your household's loyalty and membership cards on your phone. It is made by Miltiadis Sitaridis. This policy explains what data the app handles and why.
 
 ## Without an account
 
-Tesserae works fully without an account. Your cards, their photos, how often you use them and your settings stay on your phone and are never sent anywhere.
+Tesserae works fully without an account. Your cards, their photos, how often you use them and your settings stay on your phone and are never sent anywhere, except to your own Garmin watch if you choose to (below).
 
 ## With a Google account
 
@@ -24,6 +24,10 @@ You can sign in with Google to sync your cards between your phones and to share 
 These are used only to sync your cards and to show your name to the other members of a Shared Space you join. They are never sold, never used for advertising and never shared with anyone else. The members of a Shared Space see that Space's cards and the names of its members.
 
 How often you use each card, pinned cards and your settings always stay on your phone, even when you are signed in.
+
+## Garmin watch
+
+If you use the Tesserae watch app, **Send to watch** in Settings sends your pinned cards to your Garmin watch: for each card its **name**, **card number** and **barcode format**, at most 50 cards. They go from your phone to your watch over Bluetooth, through the Garmin Connect app on your phone, and are stored on the watch so you can show them at the till. Nothing is sent unless you tap Send to watch, and it needs no account. Tesserae sends nothing to Garmin's servers, and the watch app sends nothing back. Sending again replaces the cards on the watch; removing the watch app from the watch removes them.
 
 ## Where the data is kept
 
