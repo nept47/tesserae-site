@@ -16,12 +16,12 @@ Tesserae works fully without an account. Your cards, their photos, how often you
 
 You can sign in with Google to sync your cards between your phones and to share cards with your household in a Shared Space. When you sign in, Tesserae's server stores:
 
-- your **name** and **Google account ID**, which Google provides when you sign in, to identify your account. Google also gives the app your email address so Settings can show which account you signed in with, but the server does not keep it;
+- your **first name** and **Google account ID**, which Google provides when you sign in, to identify your account (the server keeps only your first name, not your full name). Google also gives the app your email address so Settings can show which account you signed in with, but the server does not keep it;
 - the **cards** you keep in your account and in Shared Spaces: name, nickname, card number, barcode format, country, store and notes;
 - the **card photos** you add, at most 20 per account: a photo of the card that is shown as the card's tile;
 - which Shared Spaces you belong to, and your role in them.
 
-These are used only to sync your cards and to show your name to the other members of a Shared Space you join. They are never sold, never used for advertising and never shared with anyone else, apart from the services that run Tesserae for us (below). The members of a Shared Space see that Space's cards and the names of its members.
+These are used only to sync your cards and to show your first name to the other members of a Shared Space you join. They are never sold, never used for advertising and never shared with anyone else, apart from the services that run Tesserae for us (below). The members of a Shared Space see that Space's cards and the first names of its members.
 
 How often you use each card, pinned cards and your settings always stay on your phone, even when you are signed in.
 
