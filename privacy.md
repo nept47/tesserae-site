@@ -4,7 +4,7 @@ title: Tesserae privacy policy
 
 # Tesserae privacy policy
 
-*Last updated: 17 October 2026*
+*Last updated: 7 November 2026*
 
 Tesserae is an Android app for keeping your household's loyalty and membership cards on your phone. It is made by Miltiadis Sitaridis. This policy explains what data the app handles and why.
 
@@ -16,7 +16,7 @@ Tesserae works fully without an account. Your cards, their photos, how often you
 
 You can sign in with Google to sync your cards between your phones and to share cards with your household in a Shared Space. When you sign in, Tesserae's server stores:
 
-- your **name**, **email address** and **Google account ID**, which Google provides when you sign in, to identify your account;
+- your **name** and **Google account ID**, which Google provides when you sign in, to identify your account. Google also gives the app your email address so Settings can show which account you signed in with, but the server does not keep it;
 - the **cards** you keep in your account and in Shared Spaces: name, nickname, card number, barcode format, country, store and notes;
 - the **card photos** you add, at most 20 per account: a photo of the card that is shown as the card's tile;
 - which Shared Spaces you belong to, and your role in them.

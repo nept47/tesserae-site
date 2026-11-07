@@ -14,7 +14,7 @@ If you no longer have the app, or your version of Tesserae doesn't show Delete a
 
 ## What is deleted
 
-- your account: name, email address and Google account ID;
+- your account: name and Google account ID;
 - your Personal Space and all its cards;
 - the Shared Spaces you own, with their cards, for every member;
 - your membership in the Shared Spaces of others.
