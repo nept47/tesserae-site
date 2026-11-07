@@ -55,7 +55,11 @@ The data is stored in the EU. Microsoft and Google are certified under the EU-US
 
 ## Keeping and deleting your data
 
-Your data is kept while you have an account. A card photo is deleted from the server when you remove or replace it, or delete its card. You can sign out at any time and choose to keep your cards on the phone or remove them. To delete your account and the data on the server, use **Settings → Delete account** in the app, or see [Delete your account](delete-account).
+Your data is kept while you use your account. When you delete a card, the server keeps only a marker that tells your other phones and your Shared Space to remove it too: the card's name, number, notes and other details are erased at once, and its photo is deleted. A card photo is also deleted from the server when you remove or replace it.
+
+If you don't sign in to Tesserae for **2 years** (an app in use renews its sign-in about once a month), your account and its data are deleted from the server, as if you had deleted it yourself. We can't warn you first, since we don't keep your email address. An account stays as long as someone still uses a Shared Space it owns, so your household doesn't lose its cards.
+
+You can sign out at any time and choose to keep your cards on the phone or remove them. To delete your account and the data on the server, use **Settings → Delete account** in the app, or see [Delete your account](delete-account).
 
 The database makes automatic backups, each kept for about 8 hours, so deleted data is gone from them within about 8 hours too.
 
