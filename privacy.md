@@ -10,7 +10,7 @@ Tesserae is an Android app for keeping your household's loyalty and membership c
 
 ## Without an account
 
-Tesserae works fully without an account. Your cards, their photos, how often you use them and your settings stay on your phone and are never sent anywhere.
+Tesserae works fully without an account. Your cards, their photos, how often you use them and your settings stay on your phone and are never sent anywhere, except to your own Garmin watch if you choose to (below).
 
 ## With a Google account
 
@@ -27,6 +27,10 @@ How often you use each card, pinned cards and your settings always stay on your 
 
 Please don't put sensitive information, such as health details, in a card's notes or photo: they sync to your phones and to the other members of a Shared Space.
 
+## Garmin watch
+
+If you use the Tesserae watch app, **Send to watch** in Settings sends your pinned cards to your Garmin watch: for each card its **name**, **card number** and **barcode format**, at most 50 cards. They go from your phone to your watch over Bluetooth, through the Garmin Connect app on your phone, and are stored on the watch so you can show them at the till. Nothing is sent unless you tap Send to watch, and it needs no account. Tesserae sends nothing to Garmin's servers, and the watch app sends nothing back. Sending again replaces the cards on the watch; removing the watch app from the watch removes them. The Garmin Connect app itself is Garmin's, under Garmin's own privacy policy.
+
 ## Why we may use this data
 
 Tesserae keeps this data to give you the service you sign up for: syncing and sharing your cards (GDPR article 6(1)(b), performance of a contract). Nothing is used for any other purpose.
@@ -37,6 +41,7 @@ The server runs on Microsoft Azure in the West Europe region (the Netherlands). 
 
 - **Microsoft Azure** hosts the server and its database, under Microsoft's data protection terms;
 - **Google** handles sign-in, and Google Play distributes the app, each under Google's own privacy policy;
+- **Garmin**'s Garmin Connect app carries the cards you send to your own watch, if you use one (above);
 - **GitHub** hosts this website, which keeps the usual web server logs.
 
 The data is stored in the EU. Microsoft and Google are certified under the EU-US Data Privacy Framework for any access from outside the EU.
