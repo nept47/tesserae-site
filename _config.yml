@@ -1,0 +1,3 @@
+# Publish .well-known/assetlinks.json, which Jekyll skips like every dot folder.
+include:
+  - .well-known
