@@ -37,7 +37,7 @@ Creating a Shared Space needs the one-time Household unlock, bought in the app t
 
 When you buy, the app tells Google Play a code made from your Tesserae account (a one-way hash of the account ID, which Google can't turn back into the ID), so the purchase belongs to your Tesserae account. Tesserae's server then asks Google Play whether the purchase is paid and stores on your account **that you have the unlock, when you got it, and Google Play's order number**. The order number is used only to tell when a purchase was refunded, so the unlock can end. Members of your Shared Space never see whether or what you paid.
 
-Google Play also sends us monthly sales reports with each order's number, product, price, date and country, but no name or contact details. We keep them as long as tax law requires (7 years in the Netherlands).
+Google Play also sends us monthly sales reports with each order's number, product, price and date, and the buyer's country (for some countries also region and postal code), but no name or contact details. We keep them as long as tax law requires (7 years in the Netherlands).
 
 ## Why we may use this data
 
