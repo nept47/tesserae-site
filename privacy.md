@@ -4,7 +4,7 @@ title: Tesserae privacy policy
 
 # Tesserae privacy policy
 
-*Last updated: 7 November 2026*
+*Last updated: 11 November 2026*
 
 Tesserae is an Android app for keeping your household's loyalty and membership cards on your phone. It is made by Miltiadis Sitaridis. This policy explains what data the app handles and why. Miltiadis Sitaridis is responsible for that data (the "controller" under the EU General Data Protection Regulation, GDPR) and can be reached at tesserae.support@gmail.com.
 
@@ -31,16 +31,24 @@ Please don't put sensitive information, such as health details, in a card's note
 
 If you use the Tesserae watch app, **Send to watch** in Settings sends your pinned cards to your Garmin watch: for each card its **name**, **card number** and **barcode format**, at most 50 cards. They go from your phone to your watch over Bluetooth, through the Garmin Connect app on your phone, and are stored on the watch so you can show them at the till. Nothing is sent unless you tap Send to watch, and it needs no account. Tesserae sends nothing to Garmin's servers, and the watch app sends nothing back. Sending again replaces the cards on the watch; removing the watch app from the watch removes them. The Garmin Connect app itself is Garmin's, under Garmin's own privacy policy.
 
+## Household unlock purchase
+
+Creating a Shared Space needs the one-time Household unlock, bought in the app through **Google Play**. Google Play handles the payment under its own terms and privacy policy: we never see your card or bank details, your address or your Google Play account.
+
+When you buy, the app tells Google Play a code made from your Tesserae account (a one-way hash of the account ID, which Google can't turn back into the ID), so the purchase belongs to your Tesserae account. Tesserae's server then asks Google Play whether the purchase is paid and stores on your account **that you have the unlock, when you got it, and Google Play's order number**. The order number is used only to tell when a purchase was refunded, so the unlock can end. Members of your Shared Space never see whether or what you paid.
+
+Google Play also sends us monthly sales reports with each order's number, product, price and date, and the buyer's country (for some countries also region and postal code), but no name or contact details. We keep them as long as tax law requires (7 years in the Netherlands).
+
 ## Why we may use this data
 
-Tesserae keeps this data to give you the service you sign up for: syncing and sharing your cards (GDPR article 6(1)(b), performance of a contract). Nothing is used for any other purpose.
+Tesserae keeps this data to give you the service you sign up for: syncing and sharing your cards, and the Household unlock you bought (GDPR article 6(1)(b), performance of a contract). Sales reports are kept because tax law requires it (article 6(1)(c), legal obligation). Nothing is used for any other purpose.
 
 ## Where the data is kept
 
 The server runs on Microsoft Azure in the West Europe region (the Netherlands). Data is encrypted in transit (HTTPS) and at rest. The services that help run Tesserae are:
 
 - **Microsoft Azure** hosts the server and its database, under Microsoft's data protection terms;
-- **Google** handles sign-in, and Google Play distributes the app, each under Google's own privacy policy;
+- **Google** handles sign-in, and Google Play distributes the app and handles payments for the Household unlock, each under Google's own privacy policy;
 - **Garmin**'s Garmin Connect app carries the cards you send to your own watch, if you use one (above);
 - **GitHub** hosts this website, which keeps the usual web server logs.
 
@@ -58,6 +66,8 @@ The data is stored in the EU. Microsoft and Google are certified under the EU-US
 Your data is kept while you use your account. When you delete a card, the server keeps only a marker that tells your other phones and your Shared Space to remove it too: the card's name, number, notes and other details are erased at once, and its photo is deleted. A card photo is also deleted from the server when you remove or replace it.
 
 If you don't sign in to Tesserae for **2 years** (an app in use renews its sign-in about once a month), your account and its data are deleted from the server, as if you had deleted it yourself. We can't warn you first, since we don't keep your email address. An account stays as long as someone still uses a Shared Space it owns, so your household doesn't lose its cards.
+
+Deleting your account also deletes the record of your Household unlock; the unlock ends with it.
 
 You can sign out at any time and choose to keep your cards on the phone or remove them. To delete your account and the data on the server, use **Settings → Delete account** in the app, or see [Delete your account](delete-account).
 
