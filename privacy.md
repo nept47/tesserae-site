@@ -4,7 +4,7 @@ title: Tesserae privacy policy
 
 # Tesserae privacy policy
 
-*Last updated: 11 November 2026*
+*Last updated: 12 November 2026*
 
 Tesserae is an Android app for keeping your household's loyalty and membership cards on your phone. It is made by Miltiadis Sitaridis. This policy explains what data the app handles and why. Miltiadis Sitaridis is responsible for that data (the "controller" under the EU General Data Protection Regulation, GDPR) and can be reached at tesserae.support@gmail.com.
 
@@ -65,7 +65,7 @@ The data is stored in the EU. Microsoft and Google are certified under the EU-US
 
 Your data is kept while you use your account. When you delete a card, the server keeps only a marker that tells your other phones and your Shared Space to remove it too: the card's name, number, notes and other details are erased at once, and its photo is deleted. A card photo is also deleted from the server when you remove or replace it.
 
-If you don't sign in to Tesserae for **2 years** (an app in use renews its sign-in about once a month), your account and its data are deleted from the server, as if you had deleted it yourself. We can't warn you first, since we don't keep your email address. An account stays as long as someone still uses a Shared Space it owns, so your household doesn't lose its cards.
+If you don't sign in to Tesserae for **2 years** (an app in use renews its sign-in about once a month), your account and its data are deleted from the server, as if you had deleted it yourself. We can't warn you first, since we don't keep your email address. An account stays as long as someone still uses a Shared Space it owns, so your household doesn't lose its cards. An account with the Household unlock, bought or kept free from before it, is never deleted this way, so you don't lose what you paid for. Delete it yourself whenever you like.
 
 Deleting your account also deletes the record of your Household unlock; the unlock ends with it.
 

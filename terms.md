@@ -4,7 +4,7 @@ title: Tesserae terms of service
 
 # Tesserae terms of service
 
-*Last updated: 11 November 2026*
+*Last updated: 12 November 2026*
 
 Thanks for using Tesserae. These terms explain what you can expect from Tesserae and what we ask of you in return. We've kept them short and plain. By using the app you agree to them.
 
@@ -28,7 +28,7 @@ You need to be 16 or older. Google Play's own terms also apply to downloading th
 
 You sign in with your Google account, so keep that account and your phone secure. If you think someone else has access to your Tesserae account, use **Settings → End all sessions** and secure your Google account.
 
-You can stop using Tesserae whenever you like. Sign out, or delete your account with **Settings → Delete account** (see [Delete your account](delete-account)). An account nobody has used for 2 years is deleted, as the privacy policy explains.
+You can stop using Tesserae whenever you like. Sign out, or delete your account with **Settings → Delete account** (see [Delete your account](delete-account)). An account nobody has used for 2 years is deleted, as the privacy policy explains, unless it has the Household unlock.
 
 ## Your cards
 
