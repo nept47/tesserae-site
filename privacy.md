@@ -4,7 +4,7 @@ title: Tesserae privacy policy
 
 # Tesserae privacy policy
 
-*Last updated: 14 November 2026*
+*Last updated: 15 November 2026*
 
 Tesserae is an Android app for keeping your household's loyalty and membership cards on your phone. It is made by Miltiadis Sitaridis. This policy explains what data the app handles and why. Miltiadis Sitaridis is responsible for that data (the "controller" under the EU General Data Protection Regulation, GDPR) and can be reached at tesserae.support@gmail.com.
 
@@ -19,11 +19,12 @@ You can sign in with Google to sync your cards between your phones and to share 
 - your **first name** and **Google account ID**, which Google provides when you sign in, to identify your account (the server keeps only your first name, not your full name). Google also gives the app your email address so Settings can show which account you signed in with, but the server does not keep it;
 - the **cards** you keep in your account and in Shared Spaces: name, nickname, card number, barcode format, country, store and notes;
 - the **card photos** you add, at most 20 per account: a photo of the card that is shown as the card's tile;
-- which Shared Spaces you belong to, and your role in them.
+- which Shared Spaces you belong to, and your role in them;
+- which of your cards you **pinned**, so your pins come back on a new or reinstalled phone. Only you see them, never the other members of a Shared Space.
 
 These are used only to sync your cards and to show your first name to the other members of a Shared Space you join. They are never sold, never used for advertising and never shared with anyone else, apart from the services that run Tesserae for us (below). The members of a Shared Space see that Space's cards and the first names of its members.
 
-How often you use each card, pinned cards and your settings always stay on your phone, even when you are signed in.
+How often you use each card and your settings always stay on your phone, even when you are signed in.
 
 Please don't put sensitive information, such as health details, in a card's notes or photo: they sync to your phones and to the other members of a Shared Space.
 
