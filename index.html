@@ -103,6 +103,18 @@
   .dots i:nth-child(3n) { opacity: .55; }
   .small { font-size: 13px; color: var(--muted); margin-top: 18px; }
 
+  /* store request */
+  .store { margin-top: 56px; background: var(--accent); color: var(--on-accent); border-radius: 18px; padding: 30px 34px;
+           display: grid; grid-template-columns: auto 1fr auto; gap: 26px; align-items: center; }
+  .store h2 { font-size: 26px; margin-bottom: 4px; }
+  .store p { margin: 0; color: #3d3420; font-size: 16px; }
+  .store .tiles { display: grid; grid-template-columns: repeat(3, 26px); gap: 5px; }
+  .store .tiles i { width: 26px; height: 26px; border-radius: 5px; }
+  .store .tiles .gap { border: 2px dashed var(--on-accent); }
+  .storebtn { display: inline-flex; align-items: center; gap: 10px; background: var(--on-accent); color: var(--fg); border-radius: 10px;
+              padding: 14px 22px; font-weight: 700; font-size: 16px; text-decoration: none; white-space: nowrap; }
+  .storebtn svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; }
+
   /* contact */
   .contact { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; padding: 64px 0; }
   .contact h2 { font-size: clamp(30px, 4vw, 40px); margin-bottom: 10px; }
@@ -128,6 +140,8 @@
     .mos { grid-template-columns: repeat(2, 1fr); }
     .m { grid-column: span 1; }
     .contact { grid-template-columns: 1fr; }
+    .store { grid-template-columns: auto 1fr; }
+    .storebtn { grid-column: 1 / -1; justify-self: start; }
   }
   @media (max-width: 520px) {
     header nav { gap: 14px; }
@@ -137,6 +151,8 @@
     .ph2 { left: 44%; transform: scale(.68) rotate(4deg); }
     .mos { grid-template-columns: 1fr; }
     .alt { flex-direction: column; }
+    .store { grid-template-columns: 1fr; padding: 24px; }
+    .storebtn { justify-content: center; justify-self: stretch; }
   }
 </style>
 </head>
@@ -215,20 +231,28 @@
     <div class="m" id="m-countries"><span class="tag rel">Per release</span><div class="n" data-n>38</div><div class="l">countries</div><div class="q">From Iceland to Cyprus. Mostly supermarkets.</div></div>
     <div class="m" id="m-languages"><span class="tag rel">Per release</span><div class="n" data-n>25</div><div class="l">languages</div><div class="q">Including Icelandic, which surprised us too.</div></div>
   </div>
-  <p class="small" id="numbers-note">Counted from totals Google Play and our server already have. No tracking, no cookies. Your store missing? <a href="#contact">Tell us</a>.</p>
+  <p class="small" id="numbers-note">Counted from totals Google Play and our server already have. No tracking, no cookies.</p>
 </div></section>
 
 <div class="wrap">
+  <section class="store" id="store" aria-labelledby="store-title">
+    <div class="tiles" aria-hidden="true"><i style="background:#2F9E44"></i><i style="background:#0077C8"></i><i style="background:#E0457B"></i><i style="background:#1C3F94"></i><i class="gap"></i><i style="background:#E56B1F"></i><i style="background:#3B2A20"></i><i style="background:#F2C200"></i><i style="background:#4B4FA8"></i></div>
+    <div>
+      <h2 id="store-title">Is your store missing?</h2>
+      <p>Tell us the store and the country. We add new ones with every release, logo and colours included.</p>
+    </div>
+    <a class="storebtn" href="mailto:tesserae.support@gmail.com?subject=Please%20add%20my%20store&amp;body=Store%20name%3A%0ACountry%3A%0A"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Suggest a store</a>
+  </section>
+
   <section class="contact" id="contact">
     <div>
       <p class="kick">Say hi</p>
-      <h2>Got an idea? Missing your store?</h2>
+      <h2>Got an idea? Something odd?</h2>
       <p>Tesserae is made by one person in the Netherlands. Every email gets read, and plenty of features started as one.</p>
     </div>
     <div class="cbox">
       <a class="mail" href="mailto:tesserae.support@gmail.com?subject=Suggestion%20for%20Tesserae"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Send a suggestion</a>
       <div class="alt">
-        <a href="mailto:tesserae.support@gmail.com?subject=Please%20add%20my%20store&amp;body=Store%20name%3A%0ACountry%3A%0A">Suggest a store</a>
         <a href="mailto:tesserae.support@gmail.com?subject=Problem%20with%20Tesserae&amp;body=What%20happened%3A%0A%0APhone%20and%20Android%20version%3A%0A">Report a problem</a>
       </div>
       <small>Opens your email app. Nothing is stored on this site.</small>
