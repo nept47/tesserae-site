@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.nept47.tesserae",
+      "sha256_cert_fingerprints": [
+        "78:86:1F:54:78:5A:F4:11:83:41:4E:E5:FB:73:75:87:05:57:3F:3B:8F:E2:20:50:F4:11:F9:98:DF:55:DE:DE",
+        "EE:BD:A6:CF:F9:84:9A:CE:35:7F:9C:8E:33:AE:90:1F:3F:A6:37:A3:4F:98:30:8B:CA:ED:99:46:E9:CA:83:DE"
+      ]
+    }
+  }
+]

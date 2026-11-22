@@ -1,0 +1,82 @@
+name: Italiano
+locale: it-IT
+home: /it/
+language: Lingua
+title: "Tesserae · Carte fedeltà per Android"
+description: "Tesserae tiene le tue carte fedeltà sul telefono Android e mostra in cassa il codice a barre giusto con un tocco. Gratis, senza pubblicità, funziona offline e si condivide con la famiglia."
+nav_numbers: Numeri
+nav_contact: Contatti
+privacy: Privacy
+terms: Termini
+refunds: Rimborsi
+delete_account: Elimina account
+kick: Carte fedeltà per Android
+h1: "Tutte le tue carte fedeltà. Un tocco in cassa."
+lead: "Scansiona le carte una volta e lascia la plastica a casa. Tesserae mostra in cassa il codice a barre giusto, funziona offline e condivide le carte con la tua famiglia."
+play_small: DISPONIBILE SU
+watch_small: SUL TUO OROLOGIO
+note: "Gratis · Senza pubblicità · Funziona offline"
+app_search: Cerca
+app_sort: Ordina
+app_smart: Intelligente
+app_country: "Paese:"
+app_edit: Modifica
+app_share: Condividi
+app_unpin: Sblocca
+feat_label: Come funziona
+f1_t: Scansiona una volta
+f1_p: "Inquadra il codice a barre con la fotocamera, oppure scegli il tuo negozio tra le centinaia che conosciamo già."
+f2_t: Mostrala in cassa
+f2_p: "Un tocco apre un codice a barre luminoso e facile da scansionare. Senza campo, senza attese."
+f3_t: Condividi con la famiglia
+f3_p: "Una persona aggiunge la carta, tutta la casa ce l’ha. Le tue carte personali restano tue."
+num_kick: Tesserae in numeri
+num_h2: "App piccola, mosaico che cresce"
+num_sub: "Alcuni numeri crescono ogni giorno, altri a ogni versione."
+tag_live: Live
+tag_release: A ogni versione
+l_downloads: download
+l_phones: telefoni con Tesserae
+l_spaces: Spazi condivisi
+l_stores: negozi
+q_stores: "Con logo e colori, pronti da scegliere."
+l_countries: paesi
+q_countries: "Dall’Islanda a Cipro. Soprattutto supermercati."
+l_languages: lingue
+q_languages: "Islandese compreso, e ha sorpreso anche noi."
+num_note: "Contati dai totali che Google Play e il nostro server hanno già. Niente tracciamento, niente cookie."
+store_h2: Manca il tuo negozio?
+store_p: "Dicci il negozio e il paese. Ne aggiungiamo di nuovi a ogni versione, con logo e colori."
+store_btn: Suggerisci un negozio
+store_subject: Aggiungete il mio negozio
+store_body: "Nome del negozio:\nPaese:\n"
+c_kick: Scrivici
+c_h2: "Un’idea? Qualcosa di strano?"
+c_p: "Tesserae è fatta da una sola persona nei Paesi Bassi. Ogni email viene letta, e molte funzioni sono nate così."
+c_btn: Invia un suggerimento
+c_subject: Suggerimento per Tesserae
+c_report: Segnala un problema
+c_report_subject: Problema con Tesserae
+c_report_body: "Cosa è successo:\n\nTelefono e versione di Android:\n"
+c_small: "Apre la tua app email. Questo sito non salva nulla."
+more: Altro su Tesserae
+home_t: Home
+home_s: "Cos’è Tesserae, in numeri"
+privacy_s: "Cosa conserviamo, e perché"
+terms_s: "Le regole, in breve"
+refunds_s: "Ci hai ripensato? 14 giorni"
+delete_s: "Dall’app o via email"
+help_p: "Hai ancora una domanda? Una persona legge ogni email."
+help_btn: Scrivi al supporto
+help_subject: Domanda su Tesserae
+# Strings the home page's script puts in (stats.json numbers)
+js:
+  under_100: Meno di 100
+  handful: Una manciata
+  early_downloads: "Siamo agli inizi. Se stai leggendo, probabilmente sei tra loro. Ciao!"
+  quip_downloads: "Sono {n} portafogli un po’ più leggeri."
+  early_phones: "Un piccolo gruppo, molto fedele."
+  quip_phones: "Telefoni che hanno Tesserae e l’hanno usata di recente."
+  early_spaces: "Famiglie piccole, grandi progetti."
+  quip_spaces: "Famiglie in cui una persona ha scansionato la carta e tutti gli altri… ce l’hanno e basta."
+english_only: "Questa pagina è solo in inglese. Il tuo browser può tradurla."

@@ -1,12 +1,13 @@
-<!doctype html>
-<html lang="en">
+{% assign t = site.data.i18n[page.lang] %}<!doctype html>
+<html lang="{{ page.lang }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-TGLWWO5pmSQ+ZijI/aG0pIvNh8qlg9SE2RuhQ0l8j9A='; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{{ page.title }}</title>
-{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}{% include alternates.html %}
+<script>{% include lang.js %}</script>
 <meta name="theme-color" content="#0F2A2F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='1' y='1' width='12' height='12' rx='2' fill='%232FB5A3'/%3E%3Crect x='15' y='1' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='1' y='15' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='15' y='15' width='12' height='12' rx='2' fill='%23F6F1E7'/%3E%3C/svg%3E">
 <style>
@@ -68,6 +69,10 @@
   .help p { margin: 0; font-weight: 600; }
   .help a { background: var(--on-accent); color: var(--fg); border-radius: 10px; padding: 10px 16px; font-weight: 700; text-decoration: none; font-size: 15px; }
 
+  .enonly { display: flex; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+            padding: 10px 14px; margin: 0 0 22px; color: var(--muted); font-size: 15px; }
+  .enonly[hidden] { display: none; }
+{% include lang-css.html %}
   footer .wrap { border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 28px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   footer nav a { color: var(--accent); font-weight: 600; font-size: 13px; }
   footer nav a[aria-current] { color: var(--fg); }
@@ -82,31 +87,33 @@
 </style>
 </head>
 <body>
-{% assign here = page.url | remove: ".html" %}
-{% assign pages = "/privacy|Privacy|What we keep, and why|lock;/terms|Terms|The rules, kept short|doc;/refund|Refunds|Changed your mind? 14 days|coin;/delete-account|Delete account|From the app or by email|trash" | split: ";" %}
+{% assign del = t.home | append: "delete-account" %}
+{% capture list %}privacy|/privacy|{{ t.privacy }}|{{ t.privacy_s }}|lock;terms|/terms|{{ t.terms }}|{{ t.terms_s }}|doc;refund|/refund|{{ t.refunds }}|{{ t.refunds_s }}|coin;delete-account|{{ del }}|{{ t.delete_account }}|{{ t.delete_s }}|trash{% endcapture %}
+{% assign pages = list | split: ";" %}
 <header><div class="wrap">
-  <a class="brand" href="/"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="12" height="12" rx="2" fill="#2FB5A3"/><rect x="15" y="1" width="12" height="12" rx="2" fill="#F2A541"/><rect x="1" y="15" width="12" height="12" rx="2" fill="#F2A541"/><rect x="15" y="15" width="12" height="12" rx="2" fill="#F6F1E7"/></svg>Tesserae</a>
-  <nav aria-label="Main"><a href="/#numbers">Numbers</a><a href="/#contact">Contact</a><a class="opt" href="/privacy"{% if here == "/privacy" %} aria-current="page"{% endif %}>Privacy</a><a class="opt" href="/terms"{% if here == "/terms" %} aria-current="page"{% endif %}>Terms</a></nav>
+  <a class="brand" href="{{ t.home }}"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="12" height="12" rx="2" fill="#2FB5A3"/><rect x="15" y="1" width="12" height="12" rx="2" fill="#F2A541"/><rect x="1" y="15" width="12" height="12" rx="2" fill="#F2A541"/><rect x="15" y="15" width="12" height="12" rx="2" fill="#F6F1E7"/></svg>Tesserae</a>
+  <div class="hnav"><nav aria-label="Main"><a class="opt" href="{{ t.home }}#numbers">{{ t.nav_numbers }}</a><a href="{{ t.home }}#contact">{{ t.nav_contact }}</a><a class="opt" href="/privacy"{% if page.ref == "privacy" %} aria-current="page"{% endif %}>{{ t.privacy }}</a><a class="opt" href="/terms"{% if page.ref == "terms" %} aria-current="page"{% endif %}>{{ t.terms }}</a></nav>{% include langs.html %}</div>
 </div></header>
 
 <main>
 <div class="wrap">
   <article class="doc">
+    {% if page.english_only %}{% for l in site.languages %}{% unless l == "en" %}<p class="enonly" data-note="{{ l }}" lang="{{ l }}" hidden>{{ site.data.i18n[l].english_only }}</p>{% endunless %}{% endfor %}{% endif %}
     {% if page.kicker %}<p class="kick">{{ page.kicker }}</p>{% endif %}
 {{ content }}
   </article>
 
   <section class="more" aria-labelledby="more">
-    <h2 id="more">More about Tesserae</h2>
+    <h2 id="more">{{ t.more }}</h2>
     <div class="cards">
-      <a href="/"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg></i><span><b>Home</b><small>What Tesserae is, in numbers</small></span></a>
-      {% for p in pages %}{% assign f = p | split: "|" %}{% unless f[0] == here %}
-      <a href="{{ f[0] }}"><i><svg viewBox="0 0 24 24" aria-hidden="true">{% case f[3] %}{% when "lock" %}<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>{% when "doc" %}<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>{% when "coin" %}<path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/><path d="M12 8v8M9.5 10.5c0-1 1-1.5 2.5-1.5s2.5.6 2.5 1.6-1 1.4-2.5 1.4-2.5.5-2.5 1.5 1 1.5 2.5 1.5 2.5-.5 2.5-1.5"/>{% when "trash" %}<path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/>{% endcase %}</svg></i><span><b>{{ f[1] }}</b><small>{{ f[2] }}</small></span></a>
+      <a href="{{ t.home }}"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg></i><span><b>{{ t.home_t }}</b><small>{{ t.home_s }}</small></span></a>
+      {% for p in pages %}{% assign f = p | split: "|" %}{% unless f[0] == page.ref %}
+      <a href="{{ f[1] }}"><i><svg viewBox="0 0 24 24" aria-hidden="true">{% case f[4] %}{% when "lock" %}<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>{% when "doc" %}<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>{% when "coin" %}<path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/><path d="M12 8v8M9.5 10.5c0-1 1-1.5 2.5-1.5s2.5.6 2.5 1.6-1 1.4-2.5 1.4-2.5.5-2.5 1.5 1 1.5 2.5 1.5 2.5-.5 2.5-1.5"/>{% when "trash" %}<path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/>{% endcase %}</svg></i><span><b>{{ f[2] }}</b><small>{{ f[3] }}</small></span></a>
       {% endunless %}{% endfor %}
     </div>
     <div class="help">
-      <p>Still a question? One person reads every email.</p>
-      <a href="mailto:tesserae.support@gmail.com?subject=Question%20about%20Tesserae">Email support</a>
+      <p>{{ t.help_p }}</p>
+      <a href="mailto:tesserae.support@gmail.com?subject={{ t.help_subject | url_encode | replace: "+", "%20" }}">{{ t.help_btn }}</a>
     </div>
   </section>
 </div>
@@ -114,7 +121,7 @@
 
 <footer><div class="wrap">
   <span>© 2026 Tesserae</span>
-  <nav aria-label="Legal"><a href="/privacy"{% if here == "/privacy" %} aria-current="page"{% endif %}>Privacy</a><a href="/terms"{% if here == "/terms" %} aria-current="page"{% endif %}>Terms</a><a href="/refund"{% if here == "/refund" %} aria-current="page"{% endif %}>Refunds</a><a href="/delete-account"{% if here == "/delete-account" %} aria-current="page"{% endif %}>Delete account</a></nav>
+  <nav aria-label="Legal"><a href="/privacy"{% if page.ref == "privacy" %} aria-current="page"{% endif %}>{{ t.privacy }}</a><a href="/terms"{% if page.ref == "terms" %} aria-current="page"{% endif %}>{{ t.terms }}</a><a href="/refund"{% if page.ref == "refund" %} aria-current="page"{% endif %}>{{ t.refunds }}</a><a href="{{ del }}"{% if page.ref == "delete-account" %} aria-current="page"{% endif %}>{{ t.delete_account }}</a></nav>
 </div></footer>
 </body>
 </html>
