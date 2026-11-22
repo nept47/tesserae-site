@@ -1,0 +1,3 @@
+{% assign alts = site.pages | where: "ref", page.ref %}{% for l in site.languages %}{% assign alt = alts | where: "lang", l | first %}{% if alt %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}{{ alt.url | remove: ".html" }}">{% if l == "en" %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ alt.url | remove: ".html" }}">{% endif %}{% endif %}{% endfor %}

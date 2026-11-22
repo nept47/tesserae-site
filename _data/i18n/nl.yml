@@ -1,0 +1,82 @@
+name: Nederlands
+locale: nl-NL
+home: /nl/
+language: Taal
+title: "Tesserae · Klantenkaarten voor Android"
+description: "Tesserae bewaart je klantenkaarten op je Android-telefoon en toont met één tik de juiste barcode aan de kassa. Gratis, zonder advertenties, werkt offline en deelt kaarten met je huishouden."
+nav_numbers: Cijfers
+nav_contact: Contact
+privacy: Privacy
+terms: Voorwaarden
+refunds: Terugbetaling
+delete_account: Account verwijderen
+kick: Klantenkaarten voor Android
+h1: "Al je klantenkaarten. Eén tik aan de kassa."
+lead: "Scan je kaarten één keer en laat het plastic thuis. Tesserae toont de juiste barcode aan de kassa, werkt offline en deelt kaarten met je huishouden."
+play_small: ONTDEK HET OP
+watch_small: OP JE HORLOGE
+note: "Gratis · Geen advertenties · Werkt offline"
+app_search: Zoeken
+app_sort: Sorteren
+app_smart: Slim
+app_country: "Land:"
+app_edit: Bewerken
+app_share: Delen
+app_unpin: Losmaken
+feat_label: Zo werkt het
+f1_t: Eén keer scannen
+f1_p: "Richt je camera op de barcode, of kies je winkel uit de honderden die we al kennen."
+f2_t: Laat hem zien aan de kassa
+f2_p: "Eén tik opent een heldere, scanbare barcode. Geen bereik nodig, geen wachten."
+f3_t: Deel met je huishouden
+f3_p: "Eén persoon voegt de kaart toe, iedereen thuis heeft hem. Je eigen kaarten blijven van jou."
+num_kick: Tesserae in cijfers
+num_h2: "Kleine app, groeiend mozaïek"
+num_sub: "Sommige cijfers groeien elke dag, andere met elke versie."
+tag_live: Live
+tag_release: Per versie
+l_downloads: downloads
+l_phones: telefoons met Tesserae
+l_spaces: Gedeelde Ruimtes
+l_stores: winkels
+q_stores: "Met logo en kleuren, klaar om te kiezen."
+l_countries: landen
+q_countries: "Van IJsland tot Cyprus. Vooral supermarkten."
+l_languages: talen
+q_languages: "Ook IJslands, daar keken we zelf ook van op."
+num_note: "Geteld uit totalen die Google Play en onze server al hebben. Geen tracking, geen cookies."
+store_h2: Mist je winkel?
+store_p: "Laat ons de winkel en het land weten. Bij elke versie komen er nieuwe bij, met logo en kleuren."
+store_btn: Winkel voorstellen
+store_subject: Voeg mijn winkel toe
+store_body: "Naam van de winkel:\nLand:\n"
+c_kick: Zeg hoi
+c_h2: "Een idee? Iets geks?"
+c_p: "Tesserae wordt gemaakt door één persoon in Nederland. Elke mail wordt gelezen, en veel functies begonnen zo."
+c_btn: Stuur een idee
+c_subject: Idee voor Tesserae
+c_report: Meld een probleem
+c_report_subject: Probleem met Tesserae
+c_report_body: "Wat er gebeurde:\n\nTelefoon en Android-versie:\n"
+c_small: "Opent je mail-app. Deze site bewaart niets."
+more: Meer over Tesserae
+home_t: Home
+home_s: "Wat Tesserae is, in cijfers"
+privacy_s: "Wat we bewaren, en waarom"
+terms_s: "De regels, kort gehouden"
+refunds_s: "Toch niet? 14 dagen"
+delete_s: "In de app of per mail"
+help_p: "Nog een vraag? Eén persoon leest elke mail."
+help_btn: Mail support
+help_subject: Vraag over Tesserae
+# Strings the home page's script puts in (stats.json numbers)
+js:
+  under_100: Minder dan 100
+  handful: Een handvol
+  early_downloads: "Het begint net. Als je dit leest, ben je er waarschijnlijk een van. Hoi!"
+  quip_downloads: "Dat zijn {n} portemonnees die een stukje dunner zijn."
+  early_phones: "Een kleine, heel trouwe club."
+  quip_phones: "Telefoons met Tesserae die het onlangs hebben gebruikt."
+  early_spaces: "Kleine huishoudens, grote plannen."
+  quip_spaces: "Huishoudens waar één persoon de kaart scande en de rest hem nu gewoon… heeft."
+english_only: "Deze pagina is alleen in het Engels. Je browser kan hem vertalen."

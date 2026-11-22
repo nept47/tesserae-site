@@ -1,0 +1,13 @@
+  /* language switcher (_includes/langs.html) */
+  .lang { position: relative; font-size: 14px; }
+  .lang summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; color: var(--muted); padding: 4px 0; }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:hover, .lang[open] summary { color: var(--fg); }
+  .lang summary svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+  .lang ul { position: absolute; right: 0; top: calc(100% + 8px); z-index: 10; margin: 0; padding: 6px; list-style: none; min-width: 170px;
+             background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 16px 40px rgb(0 0 0 / .35); }
+  .lang li a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--fg); text-decoration: none; }
+  .lang li a:hover { background: var(--bg); }
+  .lang li a[aria-current] { color: var(--accent); font-weight: 700; }
+  .hnav { display: flex; align-items: center; gap: 22px; }
+  @media (max-width: 520px) { .hnav { gap: 14px; } }

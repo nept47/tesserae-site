@@ -2,6 +2,8 @@
 kicker: Your data
 description: What Tesserae keeps about you, why, and for how long.
 title: Tesserae privacy policy
+ref: privacy
+english_only: true
 ---
 
 # Tesserae privacy policy

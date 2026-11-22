@@ -1,0 +1,82 @@
+name: Deutsch
+locale: de-DE
+home: /de/
+language: Sprache
+title: "Tesserae · Kundenkarten für Android"
+description: "Tesserae speichert deine Kundenkarten auf deinem Android-Handy und zeigt an der Kasse mit einem Tippen den richtigen Barcode. Kostenlos, ohne Werbung, offline und mit deinem Haushalt geteilt."
+nav_numbers: Zahlen
+nav_contact: Kontakt
+privacy: Datenschutz
+terms: Nutzungsbedingungen
+refunds: Erstattung
+delete_account: Konto löschen
+kick: Kundenkarten für Android
+h1: "Alle deine Kundenkarten. Ein Tippen an der Kasse."
+lead: "Scanne deine Karten einmal und lass das Plastik zu Hause. Tesserae zeigt an der Kasse den richtigen Barcode, funktioniert offline und teilt Karten mit deinem Haushalt."
+play_small: JETZT BEI
+watch_small: AUF DEINER UHR
+note: "Kostenlos · Keine Werbung · Funktioniert offline"
+app_search: Suchen
+app_sort: Sortieren
+app_smart: Intelligent
+app_country: "Land:"
+app_edit: Ändern
+app_share: Teilen
+app_unpin: Loslösen
+feat_label: So funktioniert’s
+f1_t: Einmal scannen
+f1_p: "Halte die Kamera auf den Barcode oder wähle deinen Laden aus Hunderten, die wir schon kennen."
+f2_t: An der Kasse zeigen
+f2_p: "Ein Tippen öffnet einen hellen, scanbaren Barcode. Kein Empfang nötig, kein Warten."
+f3_t: Mit dem Haushalt teilen
+f3_p: "Eine Person fügt die Karte hinzu, alle zu Hause haben sie. Deine eigenen Karten bleiben deine."
+num_kick: Tesserae in Zahlen
+num_h2: "Kleine App, wachsendes Mosaik"
+num_sub: "Manche Zahlen wachsen jeden Tag, manche mit jeder Version."
+tag_live: Live
+tag_release: Pro Version
+l_downloads: Downloads
+l_phones: Handys mit Tesserae
+l_spaces: Gemeinsame Bereiche
+l_stores: Geschäfte
+q_stores: "Mit Logo und Farben, bereit zur Auswahl."
+l_countries: Länder
+q_countries: "Von Island bis Zypern. Vor allem Supermärkte."
+l_languages: Sprachen
+q_languages: "Auch Isländisch. Hat uns selbst überrascht."
+num_note: "Gezählt aus Summen, die Google Play und unser Server sowieso haben. Kein Tracking, keine Cookies."
+store_h2: Fehlt dein Geschäft?
+store_p: "Nenn uns das Geschäft und das Land. Mit jeder Version kommen neue dazu, mit Logo und Farben."
+store_btn: Geschäft vorschlagen
+store_subject: Bitte mein Geschäft hinzufügen
+store_body: "Name des Geschäfts:\nLand:\n"
+c_kick: Sag Hallo
+c_h2: "Eine Idee? Etwas komisch?"
+c_p: "Tesserae wird von einer Person in den Niederlanden gemacht. Jede E-Mail wird gelesen, und viele Funktionen haben so angefangen."
+c_btn: Vorschlag senden
+c_subject: Vorschlag für Tesserae
+c_report: Problem melden
+c_report_subject: Problem mit Tesserae
+c_report_body: "Was ist passiert:\n\nHandy und Android-Version:\n"
+c_small: "Öffnet deine E-Mail-App. Auf dieser Seite wird nichts gespeichert."
+more: Mehr über Tesserae
+home_t: Start
+home_s: "Was Tesserae ist, in Zahlen"
+privacy_s: "Was wir speichern, und warum"
+terms_s: "Die Regeln, kurz gehalten"
+refunds_s: "Doch nicht? 14 Tage"
+delete_s: "In der App oder per E-Mail"
+help_p: "Noch eine Frage? Eine Person liest jede E-Mail."
+help_btn: Support anschreiben
+help_subject: Frage zu Tesserae
+# Strings the home page's script puts in (stats.json numbers)
+js:
+  under_100: Unter 100
+  handful: Eine Handvoll
+  early_downloads: "Es geht gerade erst los. Wenn du das liest, gehörst du wahrscheinlich dazu. Hallo!"
+  quip_downloads: "Das sind {n} Geldbörsen, die etwas dünner geworden sind."
+  early_phones: "Eine kleine, sehr treue Truppe."
+  quip_phones: "Handys, auf denen Tesserae ist und zuletzt benutzt wurde."
+  early_spaces: "Kleine Haushalte, große Pläne."
+  quip_spaces: "Haushalte, in denen eine Person die Karte gescannt hat und alle anderen sie jetzt einfach… haben."
+english_only: "Diese Seite gibt es nur auf Englisch. Dein Browser kann sie übersetzen."

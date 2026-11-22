@@ -2,13 +2,14 @@
 kicker: Your account
 description: How to delete your Tesserae account and what is deleted.
 title: Delete your Tesserae account
+ref: delete-account
 ---
 
 # Delete your Tesserae account
 
 ## In the app
 
-Open Tesserae, go to **Settings → Delete account**, check the list of what will be deleted, choose whether to keep your cards on the phone, type DELETE and confirm. Your account and its data are deleted from the server at once. Your other phones sign out the next time they sync and keep their cards.
+Open Tesserae, go to **Settings**, tap your account at the top and choose **Delete account**. Check the list of what will be deleted, choose whether to keep your cards on the phone, type DELETE and confirm. Your account and its data are deleted from the server at once. Your other phones sign out the next time they sync and keep their cards.
 
 ## By email
 
@@ -27,6 +28,6 @@ Nothing is kept for later: deleted data is removed from the server straight away
 
 ## Keeping your cards
 
-Delete account in the app offers **Keep a local copy**, so your cards stay on the phone without an account. Before you ask for deletion by email, you can do the same with **Settings → Sign out → Keep a local copy**.
+Delete account in the app offers **Keep a local copy**, so your cards stay on the phone without an account. Before you ask for deletion by email, you can do the same with **Settings → your account → Sign out → Keep a local copy**.
 
 Data that never left your phone, such as card usage and settings, is removed when you uninstall Tesserae.

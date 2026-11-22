@@ -1,0 +1,84 @@
+# Site strings, English. Each language has the same keys (_data/i18n/<lang>.yml).
+# App words follow the app's own translations (Tesserae repo, Strings.<lang>.resx).
+name: English
+locale: en-GB
+home: /
+language: Language
+title: "Tesserae · Loyalty cards for Android"
+description: "Tesserae keeps your loyalty cards on your Android phone and shows the right barcode at the till in one tap. Free, no ads, works offline, and shares cards with your household."
+nav_numbers: Numbers
+nav_contact: Contact
+privacy: Privacy
+terms: Terms
+refunds: Refunds
+delete_account: Delete account
+kick: Loyalty cards for Android
+h1: "All your loyalty cards. One tap at the till."
+lead: "Scan your cards once and leave the plastic at home. Tesserae shows the right barcode at the checkout, works offline and shares cards with your household."
+play_small: GET IT ON
+watch_small: ON YOUR WATCH
+note: "Free · No ads · Works offline"
+app_search: Search
+app_sort: Sort
+app_smart: Smart
+app_country: "Country:"
+app_edit: Edit
+app_share: Share
+app_unpin: Unpin
+feat_label: How it works
+f1_t: Scan it once
+f1_p: "Point the camera at the barcode, or pick your store from hundreds we already know."
+f2_t: Show it at the till
+f2_p: "One tap opens a bright, scannable barcode. No signal needed, no app loading."
+f3_t: Share with your household
+f3_p: "One person adds the card, everyone at home has it. Your own cards stay yours."
+num_kick: Tesserae in numbers
+num_h2: "Small app, growing wall"
+num_sub: "Some numbers grow every day, some with every release."
+tag_live: Live
+tag_release: Per release
+l_downloads: downloads
+l_phones: phones using Tesserae
+l_spaces: Shared Spaces
+l_stores: stores
+q_stores: "With their logo and colours, ready to pick."
+l_countries: countries
+q_countries: "From Iceland to Cyprus. Mostly supermarkets."
+l_languages: languages
+q_languages: "Including Icelandic, which surprised us too."
+num_note: "Counted from totals Google Play and our server already have. No tracking, no cookies."
+store_h2: Is your store missing?
+store_p: "Tell us the store and the country. We add new ones with every release, logo and colours included."
+store_btn: Suggest a store
+store_subject: Please add my store
+store_body: "Store name:\nCountry:\n"
+c_kick: Say hi
+c_h2: "Got an idea? Something odd?"
+c_p: "Tesserae is made by one person in the Netherlands. Every email gets read, and plenty of features started as one."
+c_btn: Send a suggestion
+c_subject: Suggestion for Tesserae
+c_report: Report a problem
+c_report_subject: Problem with Tesserae
+c_report_body: "What happened:\n\nPhone and Android version:\n"
+c_small: "Opens your email app. Nothing is stored on this site."
+more: More about Tesserae
+home_t: Home
+home_s: "What Tesserae is, in numbers"
+privacy_s: "What we keep, and why"
+terms_s: "The rules, kept short"
+refunds_s: "Changed your mind? 14 days"
+delete_s: "From the app or by email"
+help_p: "Still a question? One person reads every email."
+help_btn: Email support
+help_subject: Question about Tesserae
+# Strings the home page's script puts in (stats.json numbers)
+js:
+  under_100: Under 100
+  handful: A handful
+  early_downloads: "Early days. If you're reading this, you're probably one of them. Hi."
+  quip_downloads: "That's {n} wallets that got a bit thinner."
+  early_phones: "A small, very loyal crowd."
+  quip_phones: "Phones that have Tesserae and used it lately."
+  early_spaces: "Small households, big plans."
+  quip_spaces: "Households where one person scanned the card and everyone else just… has it now."
+english_only: ""
