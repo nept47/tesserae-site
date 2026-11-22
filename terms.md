@@ -2,6 +2,8 @@
 kicker: The fine print
 description: The terms for using Tesserae, kept short and plain.
 title: Tesserae terms of service
+ref: terms
+english_only: true
 ---
 
 # Tesserae terms of service

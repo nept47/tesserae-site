@@ -8,5 +8,10 @@ defaults:
       path: ""
     values:
       layout: default
+      lang: en
 exclude:
   - README.md
+
+# Site languages (nept47/Tesserae#448), in switcher order. Strings in _data/i18n/<lang>.yml.
+url: https://tesserae.nept47.dev
+languages: [en, fr, es, de, nl, it, el]

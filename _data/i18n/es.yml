@@ -1,0 +1,82 @@
+name: Español
+locale: es-ES
+home: /es/
+language: Idioma
+title: "Tesserae · Tarjetas de cliente para Android"
+description: "Tesserae guarda tus tarjetas de fidelidad en tu móvil Android y muestra el código de barras correcto en caja con un toque. Gratis, sin anuncios, sin conexión y compartido con tu hogar."
+nav_numbers: Cifras
+nav_contact: Contacto
+privacy: Privacidad
+terms: Condiciones
+refunds: Reembolsos
+delete_account: Eliminar cuenta
+kick: Tarjetas de cliente para Android
+h1: "Todas tus tarjetas de cliente. Un toque en caja."
+lead: "Escanea tus tarjetas una vez y deja el plástico en casa. Tesserae muestra el código de barras correcto en caja, funciona sin conexión y comparte tarjetas con tu hogar."
+play_small: DISPONIBLE EN
+watch_small: EN TU RELOJ
+note: "Gratis · Sin anuncios · Funciona sin conexión"
+app_search: Buscar
+app_sort: Ordenar
+app_smart: Inteligente
+app_country: "País:"
+app_edit: Editar
+app_share: Compartir
+app_unpin: No fijar
+feat_label: Cómo funciona
+f1_t: Escanéala una vez
+f1_p: "Apunta la cámara al código de barras o elige tu tienda entre los cientos que ya conocemos."
+f2_t: Enséñala en caja
+f2_p: "Un toque abre un código de barras brillante y fácil de escanear. Sin cobertura, sin esperas."
+f3_t: Comparte con tu hogar
+f3_p: "Una persona añade la tarjeta y toda la casa la tiene. Tus tarjetas propias siguen siendo tuyas."
+num_kick: Tesserae en cifras
+num_h2: "App pequeña, mosaico creciente"
+num_sub: "Unas cifras crecen cada día, otras con cada versión."
+tag_live: En directo
+tag_release: Por versión
+l_downloads: descargas
+l_phones: móviles con Tesserae
+l_spaces: Espacios compartidos
+l_stores: tiendas
+q_stores: "Con su logo y sus colores, listas para elegir."
+l_countries: países
+q_countries: "De Islandia a Chipre. Sobre todo supermercados."
+l_languages: idiomas
+q_languages: "Incluido el islandés, que también nos sorprendió."
+num_note: "Contadas con los totales que Google Play y nuestro servidor ya tienen. Sin rastreo, sin cookies."
+store_h2: ¿Falta tu tienda?
+store_p: "Dinos la tienda y el país. Añadimos tiendas nuevas en cada versión, con logo y colores."
+store_btn: Sugerir una tienda
+store_subject: Añadid mi tienda, por favor
+store_body: "Nombre de la tienda:\nPaís:\n"
+c_kick: Saluda
+c_h2: "¿Una idea? ¿Algo raro?"
+c_p: "Tesserae lo hace una sola persona en los Países Bajos. Cada correo se lee, y muchas funciones empezaron así."
+c_btn: Enviar una sugerencia
+c_subject: Sugerencia para Tesserae
+c_report: Informar de un problema
+c_report_subject: Problema con Tesserae
+c_report_body: "Qué ha pasado:\n\nMóvil y versión de Android:\n"
+c_small: "Abre tu app de correo. Este sitio no guarda nada."
+more: Más sobre Tesserae
+home_t: Inicio
+home_s: "Qué es Tesserae, en cifras"
+privacy_s: "Qué guardamos y por qué"
+terms_s: "Las normas, en breve"
+refunds_s: "¿Has cambiado de idea? 14 días"
+delete_s: "Desde la app o por correo"
+help_p: "¿Alguna pregunta más? Una persona lee cada correo."
+help_btn: Escribir a soporte
+help_subject: Pregunta sobre Tesserae
+# Strings the home page's script puts in (stats.json numbers)
+js:
+  under_100: Menos de 100
+  handful: Un puñado
+  early_downloads: "Esto acaba de empezar. Si estás leyendo esto, seguramente formas parte de ellos. ¡Hola!"
+  quip_downloads: "Son {n} carteras un poco más ligeras."
+  early_phones: "Un grupo pequeño y muy fiel."
+  quip_phones: "Móviles que tienen Tesserae y lo han usado hace poco."
+  early_spaces: "Hogares pequeños, grandes planes."
+  quip_spaces: "Hogares donde una persona escaneó la tarjeta y los demás… ya la tienen."
+english_only: "Esta página solo está en inglés. Tu navegador puede traducirla."
