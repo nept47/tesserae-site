@@ -1,4 +1,6 @@
 ---
+kicker: Household unlock
+description: How to get your money back for the Household unlock within 14 days.
 title: Get a refund for the Household unlock
 ---
 

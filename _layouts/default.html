@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{{ page.title }}</title>
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+<meta name="theme-color" content="#0F2A2F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='1' y='1' width='12' height='12' rx='2' fill='%232FB5A3'/%3E%3Crect x='15' y='1' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='1' y='15' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='15' y='15' width='12' height='12' rx='2' fill='%23F6F1E7'/%3E%3C/svg%3E">
+<style>
+  /* Same tokens, header and footer as the home page (index.html). */
+  :root {
+    --bg: #0F2A2F; --surface: #173A40; --border: #2A4A50;
+    --fg: #F6F1E7; --text: #DCE5E2; --muted: #9DB3B0; --accent: #F2A541; --on-accent: #0F2A2F;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { margin: 0; letter-spacing: -.02em; line-height: 1.15; color: var(--fg); }
+
+  header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; padding-bottom: 20px; gap: 16px; }
+  .brand { display: flex; gap: 10px; align-items: center; font-weight: 800; font-size: 18px; color: var(--fg); text-decoration: none; }
+  nav { display: flex; gap: 22px; font-size: 14px; flex-wrap: wrap; justify-content: flex-end; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover, nav a[aria-current] { color: var(--fg); }
+  header nav a[aria-current] { box-shadow: inset 0 -2px var(--accent); }
+
+  /* the page itself */
+  .doc { max-width: 760px; margin: 0 auto; padding: 28px 0 56px; }
+  .kick { font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px; }
+  .doc h1 { font-size: clamp(32px, 4.5vw, 46px); line-height: 1.08; letter-spacing: -.025em; margin: 0 0 14px; }
+  .doc h1 + p em:only-child { display: inline-block; font-style: normal; font-size: 13px; color: var(--muted);
+                              border: 1px solid var(--border); background: var(--surface); border-radius: 99px; padding: 3px 12px; }
+  .doc h2 { font-size: 24px; margin: 40px 0 12px; display: flex; gap: 12px; align-items: center; }
+  .doc h2::before { content: ""; flex: none; width: 12px; height: 12px; border-radius: 3px; background: var(--accent); }
+  .doc h3 { font-size: 19px; margin: 28px 0 10px; }
+  .doc p, .doc li { color: var(--text); font-size: 17px; line-height: 1.65; }
+  .doc p { margin: 0 0 16px; }
+  .doc strong { color: var(--fg); }
+  .doc ul, .doc ol { margin: 0 0 18px; padding-left: 24px; }
+  .doc li { margin: 0 0 8px; }
+  .doc ul { list-style: none; padding-left: 22px; }
+  .doc ul li { position: relative; }
+  .doc ul li::before { content: ""; position: absolute; left: -20px; top: .62em; width: 7px; height: 7px; border-radius: 2px; background: var(--muted); }
+  .doc ol li::marker { color: var(--accent); font-weight: 700; }
+  .doc code { font-size: .9em; background: var(--surface); border: 1px solid var(--border); border-radius: 5px; padding: 1px 5px; }
+  .doc blockquote { margin: 0 0 16px; padding: 14px 18px; background: var(--surface); border-radius: 12px; border-left: 4px solid var(--accent); }
+  .doc blockquote p:last-child { margin: 0; }
+  .doc hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+
+  /* links between the pages */
+  .more { max-width: 760px; margin: 0 auto 56px; }
+  .more h2 { font-size: 15px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .cards a { display: flex; gap: 14px; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+             padding: 16px 18px; text-decoration: none; color: var(--fg); }
+  .cards a:hover { border-color: var(--accent); }
+  .cards b { display: block; font-size: 16px; }
+  .cards small { display: block; color: var(--muted); font-size: 14px; }
+  .cards i { flex: none; width: 38px; height: 38px; border-radius: 10px; background: var(--bg); display: flex; align-items: center; justify-content: center; }
+  .cards svg { width: 20px; height: 20px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .help { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+          background: var(--accent); color: var(--on-accent); border-radius: 14px; padding: 18px 20px; }
+  .help p { margin: 0; font-weight: 600; }
+  .help a { background: var(--on-accent); color: var(--fg); border-radius: 10px; padding: 10px 16px; font-weight: 700; text-decoration: none; font-size: 15px; }
+
+  footer .wrap { border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 28px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer nav a { color: var(--accent); font-weight: 600; font-size: 13px; }
+  footer nav a[aria-current] { color: var(--fg); }
+
+  @media (max-width: 520px) {
+    header nav { gap: 14px; }
+    header nav .opt { display: none; }
+    .doc { padding-top: 12px; }
+    .doc p, .doc li { font-size: 16px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+{% assign here = page.url | remove: ".html" %}
+{% assign pages = "/privacy|Privacy|What we keep, and why|lock;/terms|Terms|The rules, kept short|doc;/refund|Refunds|Changed your mind? 14 days|coin;/delete-account|Delete account|From the app or by email|trash" | split: ";" %}
+<header><div class="wrap">
+  <a class="brand" href="/"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="12" height="12" rx="2" fill="#2FB5A3"/><rect x="15" y="1" width="12" height="12" rx="2" fill="#F2A541"/><rect x="1" y="15" width="12" height="12" rx="2" fill="#F2A541"/><rect x="15" y="15" width="12" height="12" rx="2" fill="#F6F1E7"/></svg>Tesserae</a>
+  <nav aria-label="Main"><a href="/#numbers">Numbers</a><a href="/#contact">Contact</a><a class="opt" href="/privacy"{% if here == "/privacy" %} aria-current="page"{% endif %}>Privacy</a><a class="opt" href="/terms"{% if here == "/terms" %} aria-current="page"{% endif %}>Terms</a></nav>
+</div></header>
+
+<main>
+<div class="wrap">
+  <article class="doc">
+    {% if page.kicker %}<p class="kick">{{ page.kicker }}</p>{% endif %}
+{{ content }}
+  </article>
+
+  <section class="more" aria-labelledby="more">
+    <h2 id="more">More about Tesserae</h2>
+    <div class="cards">
+      <a href="/"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg></i><span><b>Home</b><small>What Tesserae is, in numbers</small></span></a>
+      {% for p in pages %}{% assign f = p | split: "|" %}{% unless f[0] == here %}
+      <a href="{{ f[0] }}"><i><svg viewBox="0 0 24 24" aria-hidden="true">{% case f[3] %}{% when "lock" %}<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>{% when "doc" %}<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>{% when "coin" %}<path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/><path d="M12 8v8M9.5 10.5c0-1 1-1.5 2.5-1.5s2.5.6 2.5 1.6-1 1.4-2.5 1.4-2.5.5-2.5 1.5 1 1.5 2.5 1.5 2.5-.5 2.5-1.5"/>{% when "trash" %}<path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/>{% endcase %}</svg></i><span><b>{{ f[1] }}</b><small>{{ f[2] }}</small></span></a>
+      {% endunless %}{% endfor %}
+    </div>
+    <div class="help">
+      <p>Still a question? One person reads every email.</p>
+      <a href="mailto:tesserae.support@gmail.com?subject=Question%20about%20Tesserae">Email support</a>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Tesserae</span>
+  <nav aria-label="Legal"><a href="/privacy"{% if here == "/privacy" %} aria-current="page"{% endif %}>Privacy</a><a href="/terms"{% if here == "/terms" %} aria-current="page"{% endif %}>Terms</a><a href="/refund"{% if here == "/refund" %} aria-current="page"{% endif %}>Refunds</a><a href="/delete-account"{% if here == "/delete-account" %} aria-current="page"{% endif %}>Delete account</a></nav>
+</div></footer>
+</body>
+</html>

@@ -1,4 +1,6 @@
 ---
+kicker: Your account
+description: How to delete your Tesserae account and what is deleted.
 title: Delete your Tesserae account
 ---
 

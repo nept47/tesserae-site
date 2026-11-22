@@ -1,3 +1,12 @@
 # Publish .well-known/assetlinks.json, which Jekyll skips like every dot folder.
 include:
   - .well-known
+
+# Every Markdown page (Privacy, Terms, Refunds, Delete account) gets the site's own look from _layouts/default.html.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - README.md
