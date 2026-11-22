@@ -3,35 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-en4SywHmLBYU1WUaJxCrVrMaFw5rEkMu9YltvjjUeZY='; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex">
 <title>Join a Shared Space in Tesserae</title>
+<meta name="theme-color" content="#0F2A2F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='1' y='1' width='12' height='12' rx='2' fill='%232FB5A3'/%3E%3Crect x='15' y='1' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='1' y='15' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='15' y='15' width='12' height='12' rx='2' fill='%23F6F1E7'/%3E%3C/svg%3E">
 <style>
-  :root { --bg: #F6F1E7; --fg: #12343B; --muted: #4f6a6f; --accent: #B8700F; --on-accent: #F6F1E7; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0F2A2F; --fg: #F6F1E7; --muted: #a9b8b9; --accent: #F2A541; --on-accent: #0F2A2F; }
-  }
-  body { margin: 0; padding: 32px 16px; background: var(--bg); color: var(--fg);
+  /* Same tokens, header and footer as the home page (index.html). */
+  :root { --bg: #0F2A2F; --surface: #173A40; --border: #2A4A50; --fg: #F6F1E7; --muted: #9DB3B0; --accent: #F2A541; --on-accent: #0F2A2F; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); min-height: 100vh; display: flex; flex-direction: column;
          font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 28rem; margin: 0 auto; }
-  h1 { font-size: 1.4rem; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; width: 100%; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; padding-bottom: 20px; gap: 16px; }
+  .brand { display: flex; gap: 10px; align-items: center; font-weight: 800; font-size: 18px; color: var(--fg); text-decoration: none; }
+  nav { display: flex; gap: 22px; font-size: 14px; flex-wrap: wrap; justify-content: flex-end; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--fg); }
+  main { flex: 1; display: flex; align-items: center; padding: 24px 0 56px; }
+  .card { max-width: 460px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 32px 28px; text-align: center; }
+  .badge { width: 56px; height: 56px; border-radius: 14px; background: var(--accent); margin: 0 auto 18px; display: flex; align-items: center; justify-content: center; }
+  .badge svg { width: 30px; height: 30px; fill: var(--on-accent); }
+  .kick { font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+  h1 { font-size: 28px; line-height: 1.15; letter-spacing: -.02em; margin: 0 0 12px; }
   p { margin: 0 0 16px; color: var(--muted); }
-  .code { margin: 24px 0 8px; font-size: 2rem; font-weight: 700; letter-spacing: 0.15em; text-align: center; color: var(--fg); }
-  .button { display: block; margin: 24px 0; padding: 14px 20px; border-radius: 8px; background: var(--accent);
-            color: var(--on-accent); font-weight: 600; text-align: center; text-decoration: none; }
+  .code { margin: 22px 0 6px; font-size: 34px; font-weight: 800; letter-spacing: .14em; color: var(--fg);
+          background: var(--bg); border: 1px dashed var(--border); border-radius: 14px; padding: 12px 0 12px .14em; font-variant-numeric: tabular-nums; }
+  .valid { font-size: 13px; }
+  .button { display: block; margin: 22px 0 18px; padding: 15px 20px; border-radius: 10px; background: var(--accent);
+            color: var(--on-accent); font-weight: 700; text-align: center; text-decoration: none; font-size: 17px; }
+  .small { font-size: 14px; text-align: left; border-top: 1px solid var(--border); padding-top: 16px; margin: 0; }
+  .small b { color: var(--fg); }
+  footer .wrap { border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 28px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer nav a { color: var(--accent); font-weight: 600; font-size: 13px; }
   [hidden] { display: none; }
+  @media (max-width: 520px) { header nav { gap: 14px; } header nav .opt { display: none; } .card { padding: 26px 20px; } .code { font-size: 30px; } }
 </style>
 </head>
 <body>
-<main>
-  <h1>Join a Shared Space in Tesserae</h1>
-  <div id="invite" hidden>
-    <p>You were invited to share loyalty cards with a household in Tesserae.</p>
-    <p class="code" id="code"></p>
-    <a class="button" id="open" href="#">Open in Tesserae</a>
-    <p>If the button does nothing, open Tesserae, go to Settings &gt; Shared Spaces and type the code. It works once, within 24 hours of the invite.</p>
+<header><div class="wrap">
+  <a class="brand" href="/"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="12" height="12" rx="2" fill="#2FB5A3"/><rect x="15" y="1" width="12" height="12" rx="2" fill="#F2A541"/><rect x="1" y="15" width="12" height="12" rx="2" fill="#F2A541"/><rect x="15" y="15" width="12" height="12" rx="2" fill="#F6F1E7"/></svg>Tesserae</a>
+  <nav aria-label="Main"><a href="/#numbers">Numbers</a><a href="/#contact">Contact</a><a class="opt" href="/privacy">Privacy</a><a class="opt" href="/terms">Terms</a></nav>
+</div></header>
+
+<main><div class="wrap">
+  <div class="card">
+    <div class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 19c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6z"/><circle cx="16.5" cy="9" r="2.6"/><path d="M15.2 13.3c3.6-.5 6.3 1.7 6.3 5.7h-4.5c0-2.3-.6-4.2-1.8-5.7z"/></svg></div>
+    <p class="kick">You're invited</p>
+    <h1>Join a Shared Space in Tesserae</h1>
+    <div id="invite" hidden>
+      <p>Someone invited you to share loyalty cards with their household. Their cards will show next to yours.</p>
+      <p class="code" id="code"></p>
+      <p class="valid">Works once, within 24 hours of the invite.</p>
+      <a class="button" id="open" href="#">Open in Tesserae</a>
+      <p class="small">Button does nothing? Open Tesserae, go to <b>Settings › Shared Spaces</b> and type the code. No Tesserae yet? <a href="https://play.google.com/store/apps/details?id=io.github.nept47.tesserae">Get it on Google Play</a>, it's free.</p>
+    </div>
+    <p id="missing" hidden>This invite link has no valid code. Ask the person who invited you for a new one.</p>
   </div>
-  <p id="missing" hidden>This invite link has no valid code. Ask for a new invite.</p>
-</main>
+</div></main>
+
+<footer><div class="wrap">
+  <span>© 2026 Tesserae</span>
+  <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a><a href="/delete-account">Delete account</a></nav>
+</div></footer>
+
 <script>
   // The code from ?code=, checked against the invite alphabet (no 0, O, 1, I or L) before it is shown or used.
   var raw = new URLSearchParams(location.search).get("code") || "";
