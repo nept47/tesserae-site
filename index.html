@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-AEyxV2bO7deHtB6oEsw9UZxGFtwXkm8ixWDbv76JjgI='; style-src 'unsafe-inline'; img-src data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Tesserae · Loyalty cards for Android</title>
 <meta name="description" content="Tesserae keeps your loyalty cards on your Android phone and shows the right barcode at the till in one tap. Free, no ads, works offline, and shares cards with your household.">
 <meta name="theme-color" content="#0F2A2F">
@@ -244,10 +246,16 @@
   // Barcode of the Checkout phone: decorative bars.
   (function () {
     var w = [2,1,1,2,1,3,1,1,2,2,1,1,3,1,2,1,1,2,1,3,2,1,1,1,2,1,2,3,1,1,2,1,1,2,1,2,1,3,1,1,2,1,2,1,1];
-    var svg = document.getElementById("bars"), x = 2, out = "";
-    w.forEach(function (v, i) { if (i % 2 === 0) out += '<rect x="' + x + '" y="0" width="' + v + '" height="60" fill="#111"/>'; x += v; });
+    var svg = document.getElementById("bars"), x = 2, ns = "http://www.w3.org/2000/svg";
+    w.forEach(function (v, i) {
+      if (i % 2 === 0) {
+        var r = document.createElementNS(ns, "rect");
+        r.setAttribute("x", x); r.setAttribute("y", 0); r.setAttribute("width", v); r.setAttribute("height", 60); r.setAttribute("fill", "#111");
+        svg.appendChild(r);
+      }
+      x += v;
+    });
     svg.setAttribute("viewBox", "0 0 " + (x + 2) + " 60");
-    svg.innerHTML = out;
   })();
 
   // Numbers from stats.json, written once a day (nept47/Tesserae#443).
