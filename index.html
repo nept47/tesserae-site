@@ -40,6 +40,8 @@
   .play small { display: block; font-size: 11px; letter-spacing: .04em; }
   .play b { font-size: 21px; font-weight: 600; }
   .play svg { width: 24px; height: 24px; }
+  .play + .play { margin-left: 10px; }
+  .watch svg { fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   .note { font-size: 14px; color: var(--muted); margin-top: 14px; }
 
   /* phones (drawn from the app; the stores are made up) */
@@ -152,6 +154,7 @@
     .storebtn { grid-column: 1 / -1; justify-self: start; }
   }
   @media (max-width: 520px) {
+    .play + .play { margin: 10px 0 0; }
     header nav { gap: 14px; }
     header nav .opt { display: none; }
     .phones { height: 390px; }
@@ -181,6 +184,10 @@
       <a class="play" href="https://play.google.com/store/apps/details?id=io.github.nept47.tesserae">
         <svg viewBox="0 0 26 28" aria-hidden="true"><path d="M2 1l14 13L2 27z" fill="#00d7fe"/><path d="M2 1l18 10-4 3z" fill="#00f076"/><path d="M2 27l14-13 4 3z" fill="#f43249"/><path d="M20 11l5 3-5 3-4-3z" fill="#ffc900"/></svg>
         <span><small>GET IT ON</small><b>Google Play</b></span>
+      </a>
+      <a class="play watch" href="https://apps.garmin.com/apps/748d46a9-a20c-43f4-ba4c-4981a97d9627">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6l.8 4M9 2l-.8 4M9 22h6l.8-4M9 22l-.8-4"/><rect x="5" y="6" width="14" height="12" rx="4"/><path d="M12 9.5V12l1.8 1.2"/></svg>
+        <span><small>ON YOUR WATCH</small><b>Connect IQ</b></span>
       </a>
       <p class="note">Free · No ads · Works offline</p>
     </div>
