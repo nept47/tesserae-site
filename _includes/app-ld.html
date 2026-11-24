@@ -1,0 +1,13 @@
+{% comment %} Structured data for the home page (nept47/Tesserae#458): tells search engines the site is about an Android app. A data block, never run as a script, so the CSP needs no hash for it. {% endcomment %}{% capture home_url %}{{ site.url }}{{ t.home }}{% endcapture %}
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [
+  {"@type": "WebSite", "name": "Tesserae", "url": {{ home_url | jsonify }}, "inLanguage": {{ page.lang | jsonify }}},
+  {"@type": "MobileApplication", "name": "Tesserae", "url": {{ home_url | jsonify }},
+   "description": {{ t.description | jsonify }}, "inLanguage": {{ page.lang | jsonify }},
+   "operatingSystem": "Android 7.0 or newer", "applicationCategory": "ShoppingApplication",
+   "image": {{ "/assets/og/og-" | append: page.lang | append: ".jpg" | prepend: site.url | jsonify }},
+   "installUrl": "https://play.google.com/store/apps/details?id=io.github.nept47.tesserae",
+   "sameAs": ["https://play.google.com/store/apps/details?id=io.github.nept47.tesserae"],
+   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}
+]}
+</script>

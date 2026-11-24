@@ -14,3 +14,11 @@ The Tesserae website, https://tesserae.nept47.dev (GitHub Pages, Jekyll).
 ## Content Security Policy
 
 Inline scripts are allowed by hash. After changing `_includes/lang.js`, the script in `_layouts/home.html` or the one in `join/index.html`, build (`jekyll build`) and put the new `sha256-…` of each `<script>` body in the page's CSP meta tag.
+
+## Search and sharing (nept47/Tesserae#458)
+
+- `sitemap.xml` is made by `jekyll-sitemap` (a GitHub Pages plugin); `/join/` is left out (`_config.yml`) and has `noindex`. `robots.txt` points to the sitemap.
+- Pages have addresses without `.html` (`permalink` in `_config.yml`), the same ones the canonical links and the sitemap give.
+- `_includes/seo.html` adds the canonical link, favicons and Open Graph / Twitter tags to every page; `_includes/app-ld.html` adds the app's structured data (JSON-LD) to the home page. JSON-LD is data, not a script, so it needs no CSP hash.
+- Share images: `assets/og/og-<lang>.jpg` (1200 × 630), one per language, made from the home page's hero and phones. After changing the hero text or the phones, make them again.
+- Favicons: `favicon.svg`, `favicon.ico` (48, 32, 16 px) and `apple-touch-icon.png` (180 px). The CSP allows images from the site itself (`img-src 'self'`) for them.

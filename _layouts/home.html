@@ -6,13 +6,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-TGLWWO5pmSQ+ZijI/aG0pIvNh8qlg9SE2RuhQ0l8j9A=' 'sha256-ihS9uG8auZX9orMKBrJPanki0aDhvra4xYlbIMTNuRA='; style-src 'unsafe-inline'; img-src data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-TGLWWO5pmSQ+ZijI/aG0pIvNh8qlg9SE2RuhQ0l8j9A=' 'sha256-ihS9uG8auZX9orMKBrJPanki0aDhvra4xYlbIMTNuRA='; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{{ t.title }}</title>
-<meta name="description" content="{{ t.description }}">{% include alternates.html %}
+<meta name="description" content="{{ t.description }}">{% include alternates.html %}{% include seo.html %}{% include app-ld.html %}
 <script>{% include lang.js %}</script>
 <meta name="theme-color" content="#0F2A2F">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='1' y='1' width='12' height='12' rx='2' fill='%232FB5A3'/%3E%3Crect x='15' y='1' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='1' y='15' width='12' height='12' rx='2' fill='%23F2A541'/%3E%3Crect x='15' y='15' width='12' height='12' rx='2' fill='%23F6F1E7'/%3E%3C/svg%3E">
 <style>
   :root {
     --bg: #0F2A2F; --band: #0A1F23; --surface: #173A40; --border: #2A4A50;
