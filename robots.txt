@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tesserae.nept47.dev/sitemap.xml

@@ -9,9 +9,22 @@ defaults:
     values:
       layout: default
       lang: en
+  # The invite page is for the app's links only: kept out of search (noindex in the page) and out of the sitemap.
+  - scope:
+      path: "join"
+    values:
+      sitemap: false
 exclude:
   - README.md
+
+# Pages get addresses without .html (/privacy, as linked everywhere), so the sitemap and canonical links name the same URL;
+# the files are still privacy.html and so on. A permalink style that ends in neither / nor :output_ext does that (no posts here).
+permalink: /:categories/:title
 
 # Site languages (nept47/Tesserae#448), in switcher order. Strings in _data/i18n/<lang>.yml.
 url: https://tesserae.nept47.dev
 languages: [en, fr, es, de, nl, it, el]
+
+# sitemap.xml for search engines (nept47/Tesserae#458); jekyll-sitemap is one of GitHub Pages' built-in plugins.
+plugins:
+  - jekyll-sitemap
